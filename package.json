@@ -1,0 +1,25 @@
+{
+    "name": "hltas",
+    "displayName": "hltas",
+    "description": "extension for hltas files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "hltas",
+            "aliases": ["hltas", "hltas"],
+            "extensions": [".hltas"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "hltas",
+            "scopeName": "source.hltas",
+            "path": "./syntaxes/hltas.tmLanguage.json"
+        }]
+    }
+}
