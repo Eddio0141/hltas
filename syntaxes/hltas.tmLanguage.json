@@ -6,7 +6,7 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -16,16 +16,9 @@
 				"match": "\\b(if|while|for|return)\\b"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.hltas",
-			"begin": "\"",
-			"end": "\"",
-			"patterns": [
-				{
-					"name": "constant.character.escape.hltas",
-					"match": "\\\\."
-				}
-			]
+		"comments": {
+			"name": "comment.line.double-slash.hltas",
+			"match": "^\\s*\/\/.*"
 		}
 	},
 	"scopeName": "source.hltas"
