@@ -7,6 +7,12 @@
 		},
 		{
 			"include": "#numbers"
+		},
+		{
+			"include": "#change_value"
+		},
+		{
+			"include": "#special_frames"
 		}
 	],
 	"repository": {
@@ -15,8 +21,16 @@
 			"match": "^\\s*\/\/.*"
 		},
 		"numbers": {
-			"name": "constant.numeric",
+			"name": "constant.numeric.hltas",
 			"match": "(?<=[\\s\\|])-?\\d+(?:\\.\\d+)?(?=[\\|\\s;])"
+		},
+		"change_value": {
+			"name": "constant.language.change.hltas",
+			"match": "(?<=change )(target_yaw|pitch|yaw)"
+		},
+		"special_frames": {
+			"name": "entity.name.function.special_frames.hltas",
+			"match": "^\\s*(buttons|lgagstminspeed|change|target_yaw_override|target_yaw|strafing|seed|reset|save)"
 		}
 	},
 	"scopeName": "source.hltas"
