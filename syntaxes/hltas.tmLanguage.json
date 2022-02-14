@@ -3,22 +3,20 @@
 	"name": "hltas",
 	"patterns": [
 		{
-			"include": "#keywords"
+			"include": "#comments"
 		},
 		{
-			"include": "#comments"
+			"include": "#numbers"
 		}
 	],
 	"repository": {
-		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.hltas",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
 		"comments": {
 			"name": "comment.line.double-slash.hltas",
 			"match": "^\\s*\/\/.*"
+		},
+		"numbers": {
+			"name": "constant.numeric",
+			"match": "(?<=[\\s\\|])-?\\d+(?:\\.\\d+)?(?=[\\|\\s;])"
 		}
 	},
 	"scopeName": "source.hltas"
