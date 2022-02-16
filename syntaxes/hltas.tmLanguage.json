@@ -12,6 +12,9 @@
 			"include": "#change_value"
 		},
 		{
+			"include": "#target_yaw_value"
+		},
+		{
 			"include": "#special_frames"
 		}
 	],
@@ -26,11 +29,15 @@
 		},
 		"change_value": {
 			"name": "constant.language.change.hltas",
-			"match": "(?<=change )(target_yaw|pitch|yaw)"
+			"match": "(?<=\\s*change\\s*)(target_yaw|pitch|yaw)"
 		},
 		"special_frames": {
-			"name": "entity.name.function.special_frames.hltas",
+			"name": "support.function.special_frames.hltas",
 			"match": "^\\s*(buttons|lgagstminspeed|change|target_yaw_override|target_yaw|strafing|seed|reset|save)"
+		},
+		"target_yaw_value": {
+			"name": "constant.language.change.hltas",
+			"match": "(?<=\\s*target_yaw\\s*)velocity_lock"
 		}
 	},
 	"scopeName": "source.hltas"
