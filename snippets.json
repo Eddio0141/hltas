@@ -1,0 +1,44 @@
+{
+    "Empty framebulk": {
+        "prefix": "empty",
+        "body": [
+            "${1:---}${2:---}${3:-}${4:-}${5:-}${6:-}|${7:----}${8:--}|${9:--}${10:-}${11:---}|${12:0.001}|${13:-}|${14:-}|${15:1}"
+        ],
+        "description": "Empty framebulk"
+    },
+    "Strafe framebulk ducktap": {
+        "prefix": "strafeD",
+        "body": [
+            "${1:s03}${2:l}${3:-}${4:D}-${5:c}${6:-}-|------|------|${7:0.001}|${8:-}|${9:-}|${10:1}"
+        ],
+        "description": "Framebulk with strafing"
+    },
+    "Strafe framebulk autojump": {
+        "prefix": "strafeJ",
+        "body": [
+            "${1:s03}${2:l}${3:j}${4:-}-${5:c}${6:-}-|------|------|${7:0.001}|${8:-}|${9:-}|${10:1}"
+        ],
+        "description": "Framebulk with strafing"
+    },
+    "Key move": {
+        "prefix": "key",
+        "body": [
+            "-------${1:-}${2:-}-|${3:flrb}--|${4:--}----|${5:0.001}|${6:-}|${7:-}|${8:1}"
+        ],
+        "description": "Framebulk using key movement"
+    },
+    "0ms": {
+        "prefix": "0ms",
+        "body": [
+            "----------|------|${1:--}${2:-}${3:---}|${4:0.0000000001}|${5:-}|${6:-}|${7:1}"
+        ],
+        "description": "A 0ms framebulk"
+    },
+    "change": {
+        "prefix": "change",
+        "body": [
+            "change ${1:target_yaw} to ${2:0} over ${3:0.4} s"
+        ],
+        "description": "Change of some angle"
+    }
+}

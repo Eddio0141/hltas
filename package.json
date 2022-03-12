@@ -20,6 +20,12 @@
             "language": "hltas",
             "scopeName": "source.hltas",
             "path": "./syntaxes/hltas.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "hltas",
+                "path": "./snippets.json"
+            }
+        ]
     }
 }
