@@ -40,5 +40,13 @@
             "change ${1:target_yaw} to ${2:0} over ${3:0.4} s"
         ],
         "description": "Change of some angle"
+    },
+    "0ms look down use": {
+        "prefix": "0msuse",
+        "body": [
+            "----------|------|--u---|0.0000000001|-|89|8",
+            "----------|------|------|0.0000000001|-|${1:10}|1"
+        ],
+        "description": "A 0ms framebulk that looks down and press use, and restores the pitch"
     }
 }
